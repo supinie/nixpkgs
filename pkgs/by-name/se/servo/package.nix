@@ -2,7 +2,6 @@
   lib,
   stdenv,
   fetchFromGitHub,
-  # rustPlatform,
   python3,
   rustup,
   fontconfig,
@@ -28,7 +27,6 @@
   clangStdenv,
 }:
 
-# rustPlatform.buildRustPackage rec {
 stdenv.mkDerivation rec {
   pname = "servo";
   version = "unstable-2024-08-08";
@@ -39,20 +37,6 @@ stdenv.mkDerivation rec {
     rev = "f989d3776eca7c4a21f03a406a11c1b1228b285e";
     hash = "sha256-0JoTMo3DYT3UB9EjWxy4jHIVPc01HqtOj68yh3eApOs=";
   };
-
-  # cargoLock = {
-  #   lockFile = ./Cargo.lock;
-  #   outputHashes = {
-  #     "d3d12-22.0.0" = lib.fakeHash;
-  #     "derive_common-0.0.1" = lib.fakeHash;
-  #     "fontsan-0.5.2" = lib.fakeHash;
-  #     "gilrs-0.10.6" = lib.fakeHash;
-  #     "libz-sys-1.1.18" = lib.fakeHash;
-  #     "mozjs-0.14.1" = lib.fakeHash;
-  #     "peek-poke-0.3.0" = lib.fakeHash;
-  #     "servo-media-0.1.0" = lib.fakeHash;
-  #   };
-  # };
 
   # nativeBuildInputs = [ python3 ];
 
