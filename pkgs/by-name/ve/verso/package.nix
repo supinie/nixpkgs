@@ -61,9 +61,11 @@ rustPlatform.buildRustPackage {
   RUSTC_BOOTSTRAP = true;
 
   configurePhase = ''
-    ls -l
-    ls -l /build
-    ls -l /build/cargo-vendor-dir
+    ls -al /build/source
+    sed -i -e 's/..\/..\/..\/resources\//\/build\/source\/resources\//g' ../cargo-vendor-dir/embedder_traits-0.0.1/resources.rs
+    sed -i -e 's/\/style\//\/style-0.0.1\//g' ../cargo-vendor-dir/servo_atoms-0.0.1/build.rs
+
+    export HOME=$TMPDIR
   '';
 
   nativeBuildInputs = [
