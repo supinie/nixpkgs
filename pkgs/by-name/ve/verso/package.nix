@@ -68,7 +68,6 @@ rustPlatform.buildRustPackage {
       "servo-media-0.1.0" = "sha256-+J/6ZJPM9eus6YHJA6ENJD63CBiJTtKZdfORq9n6Nf8=";
       "signpost-0.1.0" = "sha256-xRVXwW3Gynace9Yk5r1q7xA60yy6xhC5wLAyMJ6rPRs=";
       "webxr-0.0.1" = lib.fakeHash;
-      "size_of_test" = lib.fakeHash;
     };
   };
 
