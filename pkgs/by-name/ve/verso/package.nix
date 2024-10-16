@@ -59,10 +59,10 @@ rustPlatform.buildRustPackage {
   cargoLock = {
     lockFile = ./Cargo.lock;
     outputHashes = {
-      "background_hang_monitor-0.0.1" = lib.fakeHash;
+      "background_hang_monitor-0.0.1" = "sha256-YR7SPS4V4JQLETWtbYagP838fMGtYKduaFC9NyIiYDY=";
       "derive_common-0.0.1" = "sha256-WHgQkZ5rY21qApg9LBHNBExn7T7A412lfMR45wKoTH4=";
       "fontsan-0.5.2" = "sha256-4id66xxQ8iu0+OvJKH77WYPUE0eoVa9oUHmr6lRFPa8=";
-      "mozjs-0.14.1" = lib.fakeHash;
+      "mozjs-0.14.1" = "sha256-RMM28Rd0r58VLfNEJzjWw3Ze6oKEi5lC1Edv03tJbfY=";
       "naga-22.0.0" = lib.fakeHash;
       "peek-poke-0.3.0" = lib.fakeHash;
       "servo-media-0.1.0" = "sha256-+J/6ZJPM9eus6YHJA6ENJD63CBiJTtKZdfORq9n6Nf8=";
